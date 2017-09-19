@@ -1,0 +1,390 @@
+@charset "UTF-8";
+/*
+	Author: Haylee Steinert
+	Description: Used to edit typography.html
+	Date: 9.12.17
+	Version: 0.0.1
+*/
+
+/* ==== Import Font Families =================== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Ubuntu');
+
+/*====== Body Styling ======================*/
+body {
+	margin: 0;
+	padding-left: 1em;
+	font-size: 15px;
+	color: #666666;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.navigation ul{
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	
+	
+	width: 86%;
+}
+
+.main-content {
+
+	text-align: left;
+	margin: 0 0 0 4em;
+}
+
+.box {
+
+	width: 70%
+}
+
+/*=======ALL Header Format ================*/
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Roboto Condensed', 'Times New Roman', serif;
+	color: #000000;
+	font-weight: 400;
+}
+
+/*========== Individual Header Formats ========*/
+h1 {
+
+	font-size: 6.854em;
+	line-height: 7rem;
+	/* 1em here would actually be 6.854 * 1.5... rem references from body no matter where it is. Round up to what the font size is near*/
+	margin: 1rem auto 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+h2 {
+	font-size: 4.236em;
+	line-height: 4.5rem;
+	margin: 1rem auto 2rem;
+}
+
+h3 {
+	font-size: 2.618em;
+	line-height: 3rem;
+	margin: 1rem auto 2rem;
+}
+
+h4 {
+
+	font-size: 1.618em;
+	line-height: 2rem;
+	margin: 1rem auto 2rem;
+}
+
+.display-1{
+
+	font-family: 'Ubuntu', 'Times New Roman', serif;
+	color: #000000;
+	font-weight: 400;
+	font-size: 7em;
+	letter-spacing: .08em;
+
+}
+
+.display-2{
+
+	font-family: 'Ubuntu', 'Times New Roman', serif;
+	font-size: 5em;
+	letter-spacing: .08em;
+}
+
+.display-3{
+
+	font-family: 'Ubuntu', 'Times New Roman', serif;
+	font-size: 3em;
+	letter-spacing: .08em;
+}
+
+.display-4{
+
+	font-family: 'Ubuntu', 'Times New Roman', serif;
+	font-size: 2em;
+	letter-spacing: .08em;
+}
+
+/*======= Highlight Code Section ==============*/
+
+.highlight{
+
+	background-color: #E3F1E5;
+	border: 1px solid #cccccc;
+	padding: 1em;
+	margin: 0 0 2em;
+	box-sizing: border-box;
+}
+
+.highlight pre {
+
+	display: block;
+	overflow-x: auto;
+}
+
+.highlight .mk {
+
+	color: #FF0004;
+
+}
+
+.highlight .mk2 {
+
+	color: #FF9E00;
+
+}
+
+.highlight .mk3 {
+
+	color: #19A313;
+
+}
+/*======= END highlight code section ==============*/
+
+/*========Responsive Tables =============*/
+.table {
+
+	border-collapse: collapse;
+	margin: 1em 0 1em;
+	width: 70%;
+	background-color: white;
+}
+
+.table td,
+.table th {
+
+	border: 1px solid #cccccc;
+	padding: 1em 1em 1em 1em;
+
+
+}
+
+.table th {
+
+	font-family: 'Roboto Condensed', 'Times New Roman', serif;
+	font-size: 1em;
+	line-height: 3em;
+	color: #888888;
+	font-weight: 400;
+	text-align: center;
+}
+
+/*======END tables ===============*/
+
+/*======inline elments =========*/
+
+p{
+
+	line-height: 1.25em;
+	margin: 1rem 0 2rem;
+}
+
+/*b and i are just for looks, strong and em are rendered by browser, used by SEO, tell search engine that the word is relevant*/
+b, strong {
+
+	font-weight: bold;
+	color: #000000;
+}
+
+i, em {
+
+	font-style: italic;
+}
+
+mark {
+
+	background-color: deepskyblue;
+}
+
+q {
+
+	quotes: "\00AB" "\00BB" "\2018" "\2019"
+
+}
+
+/*======= END Inline =======*/
+
+/*======Blockquote Formating=======*/
+
+.blockquote {
+
+	margin:0;
+	padding: 0;
+
+}
+
+.blockquote p {
+
+	font-size: 1.25em;
+	line-height: 1.5em;
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+
+}
+
+.blockquote .blockquote-footer {
+
+	margin-left: 1rem;
+	font-size: .8em;
+}
+
+.blockquote p{
+
+	margin:0;
+	padding:0;
+}
+
+/*=======Blockquote Footer===================*/
+.blockquote .blockquote-footer:before {
+
+	content: 'l';
+	padding-right: 1rem;
+}
+
+.blockquote .blockquote-footer cite {
+
+	font-style: italic;
+	color: #000000;
+}
+
+/*=============Blockquote on the right===============*/
+.blockquote.text-right{
+
+	text-align: right;
+
+}
+
+.blockquote.text-right .blockquote-footer:before{
+
+	content: "";
+	padding-right:0;
+}
+
+.blockquote.text-right .blockquote-footer:after {
+
+	content: 'l';
+	padding-right: 1em;
+	margin-right: 1em;
+}
+
+/*=============Blockquote in the center===============*/
+.blockquote.text-center{
+
+	text-align: center;
+
+}
+
+.blockquote.text-center .blockquote-footer:before{
+
+	content: 'l';
+	padding-right:.5rem;
+}
+
+
+
+/*=====List bullet point styling =======*/
+
+
+ul ul li{
+
+	list-style-type: square;
+}
+
+ul ul ul li{
+
+	list-style-type: lower-greek;
+}
+
+.list-unstyle{
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-inline {
+
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.list-inline li{
+
+	float: left;
+	margin: 0 1em 0 0;
+
+}
+
+/*====== Table of Content Editing ======= */
+
+.toc {
+
+	position: fixed;
+	top: 0;
+	left: 80rem;
+	z-index: 999;
+	width: 100%;
+	height: 23px;
+}
+
+.toc ul li{
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.toc ul ul li{
+
+	list-style-type: circle;
+	margin: .5rem;
+	padding: 0;
+}
+
+.toc a {
+
+	text-decoration: none;
+
+}
+
+.toc a:visited {
+
+	text-decoration: none;
+	color: #19A313;
+
+}
+
+.toc a:link {
+
+	text-decoration: none;
+	color: #FF9E00;
+
+}
+
+
+.toc a:active {
+
+	text-decoration: none;
+	color: #FF0004;
+
+}
+
+#tocheader {
+
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}

@@ -1,0 +1,81 @@
+/*
+  Author: Haylee Steinert
+  Date: 08.31.2017
+  Purpose: Used to edit Practical-1.html
+  Version: 0.0.1
+*/
+
+* {
+
+
+}
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  /*
+  font-size: 15px;
+  line-height = 1.25x(font-size);
+  line-height = 25px;
+  */
+  line-height: 1.25em;
+  font-weight: 400;
+  color: #666666
+
+}
+
+table#practical-1 {
+
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  border-spacing: 5px;
+
+}
+
+table#practical-1 td,
+table#practical-1 th {
+
+  border: 5px solid pink;
+  padding: 10px;
+
+}
+
+table#practical-1 caption {
+
+  caption-side: bottom;
+  text-align: right;
+  font-size: 0.8em;
+  color: rgba(150, 150, 150, 0.4); /*hexadecimal: [88][88][88][transperency]; */
+  padding: 1rem;
+
+}
+
+table#practical-1 thead {
+
+  background-color: #000000;
+  color: #ffffff;
+
+}
+
+table#practical-1 tbody tr:nth-child(1n) {
+
+  /* nth-child(xn) [line number]
+  3(0)+1= 1
+  3(1)+1= 4
+  3(2)+1= 7
+  3(3)+1= 10
+  ...etc.*/
+
+background-color: yellow;
+
+}
+
+table#practical-1 tfoot {
+
+  background-color: #fafafa;
+  color: #000000;
+  font-style: italic;
+  text-align: center;
+
+}
